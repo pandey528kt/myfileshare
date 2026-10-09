@@ -260,6 +260,8 @@
 .manager-main { min-width: 0; flex: 1; display: flex; flex-direction: column; }
 .manager-header { height: 65px; flex: 0 0 65px; display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 0 42px; border-bottom: 1px solid #edf0f4; background: #fff; }
 .breadcrumbs { display: flex; align-items: center; gap: 9px; color: #99a2af; font-size: 11px; }
+.breadcrumb-home { padding: 0; border: 0; color: #99a2af; background: transparent; font: inherit; cursor: pointer; }
+.breadcrumb-home:hover { color: #2563eb; }
 .breadcrumbs strong { color: #475366; font-weight: 550; }
 .header-actions { display: flex; align-items: center; gap: 17px; }
 .search-box { display: flex; align-items: center; gap: 8px; width: 240px; height: 34px; padding: 0 9px; color: #9aa4b2; border: 1px solid #e8ebf0; border-radius: 6px; background: #fff; }
@@ -286,6 +288,8 @@
 .upload-banner-text small, .upload-banner-limit { color: #8995a8; font-size: 10px; }
 .banner-chevron { color: #95a1b1; }
 .list-toolbar { display: flex; align-items: center; justify-content: space-between; margin: 31px 0 15px; }
+.toolbar-actions { display: flex; align-items: center; gap: 10px; }
+.download-folder { min-height: 31px; padding: 0 10px; font-size: 10px; }
 .list-toolbar > div:first-child { display: flex; align-items: baseline; gap: 9px; }
 .list-toolbar h2 { margin: 0; color: #344054; font-size: 13px; font-weight: 600; }
 .item-count { color: #9aa4b2; font-size: 10px; }
@@ -296,6 +300,10 @@
 .entry-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 13px; }
 .entry-card { min-width: 0; overflow: hidden; border: 1px solid #e9edf2; border-radius: 7px; background: #fff; text-align: left; }
 .file-entry { width: 100%; padding: 0; color: inherit; font: inherit; cursor: pointer; }
+.file-entry { position: relative; }
+.file-open-button { display: block; width: 100%; padding: 0; border: 0; color: inherit; background: transparent; text-align: left; font: inherit; cursor: pointer; }
+.file-download-action { position: absolute; top: 8px; right: 8px; z-index: 1; display: grid; place-items: center; width: 27px; height: 27px; border: 1px solid #e3e9f2; border-radius: 5px; color: #60728f; background: #fff; cursor: pointer; }
+.file-download-action:hover { color: #2563eb; background: #f5f8ff; }
 .file-entry:hover { border-color: #cbdaf8; box-shadow: 0 3px 12px #2c5db30d; }
 .file-open-mark { position: absolute; right: 10px; bottom: 9px; display: grid; place-items: center; width: 23px; height: 23px; border: 1px solid #e5eaf3; border-radius: 6px; color: #5579bf; background: #fff; }
 .folder-card { padding: 0; cursor: pointer; }
