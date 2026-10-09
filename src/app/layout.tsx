@@ -16,8 +16,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Parcel — Share files, simply",
-  description: "Send files with a private, password-protected share link.",
+  title: "FileShare — Modern File Sharing",
+  description: "Upload, organize, and share files from one simple workspace.",
 };
 
 export default function RootLayout({
