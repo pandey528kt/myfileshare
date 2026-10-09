@@ -404,6 +404,99 @@
 .manager-footer { position: relative; z-index: 1; background: #ffffff80; }
 @media (prefers-reduced-motion: reduce) { .entry-card, .upload-banner, .button-primary, .button-secondary, .side-link { transition: none !important; } .entry-card:hover, .upload-banner:hover, .button-primary:hover, .button-secondary:hover, .side-link:hover { transform: none; } }
 
+/* Warm studio palette and editorial finish */
+.manager-shell { background: radial-gradient(ellipse at 82% 11%, #ead9bf 0, transparent 31%), linear-gradient(135deg, #f1eee8 0%, #f8f6f1 52%, #eeeae1 100%); color: #292b27; }
+.manager-shell::before { background: linear-gradient(145deg, #fff8e899, #e5cba544); box-shadow: 18px 20px 45px #8167401c, inset 1px 1px 0 #fff; }
+.manager-shell::after { background: radial-gradient(circle at 32% 27%, #fff9, #e5d9c866 62%, #ccbea555); box-shadow: 16px 22px 40px #67583b18, inset -8px -8px 15px #b8a7851c; }
+.manager-sidebar { border-right-color: #303b35; background: linear-gradient(160deg, #26332d 0%, #202a25 68%, #18231f 100%); box-shadow: 9px 0 28px #1b282117, inset -1px 0 0 #ffffff0c; color: #f3f0e8; }
+.manager-brand { color: #f5f1e7; }
+.manager-brand > span:last-child > span { color: #f0a36e; }
+.manager-brand-icon { color: #26322c; background: linear-gradient(145deg, #ffd29d, #e58b58 68%, #ba623c); box-shadow: 0 5px 0 #994d31, 0 9px 16px #e38e5b30, inset 0 1px 1px #fff9; }
+.sidebar-label { color: #85938a; }
+.side-link { color: #b4beb6; }
+.side-link svg { color: #87958b; }
+.side-link:hover { background: #ffffff0a; }
+.side-link-active { color: #f4bf91; background: #ffffff0d; box-shadow: inset 3px 0 #e58b58, inset 0 1px #ffffff0b; }
+.side-link-active svg { color: #f0a36e; }
+.sidebar-storage { border-top-color: #ffffff1b; }
+.storage-title { color: #c4cdc4; }
+.storage-title span + span, .sidebar-storage > small { color: #87958b; }
+.storage-track { background: #ffffff18; }
+.storage-track span { background: linear-gradient(90deg, #e89461, #f2bf82); }
+.sidebar-bottom { border-top-color: #ffffff1b; }
+.avatar { color: #f4d0ae; background: #ffffff14; }
+.sidebar-bottom strong { color: #ebece5; }
+.sidebar-bottom small, .sidebar-more { color: #97a49a; }
+.manager-header { border-bottom-color: #e5dfd4; background: linear-gradient(180deg, #fbfaf6 0%, #f7f4ee 100%); box-shadow: 0 5px 20px #473d2c0a; }
+.breadcrumbs { color: #9a9387; }
+.breadcrumbs strong { color: #4c5149; }
+.breadcrumb-home:hover { color: #c66540; }
+.search-box { border-color: #e2ddd4; background: #fffefa; box-shadow: 0 2px 5px #473d2c0a, inset 0 1px 0 #fff; }
+.search-box:focus-within { border-color: #cf8a64; box-shadow: 0 0 0 3px #d98c5a1c; }
+.search-box kbd { border-color: #e8e1d6; color: #a49a8c; background: #faf8f2; }
+.header-avatar { color: #9a5336; background: #f4dfce; }
+.heading-eyebrow { color: #a07860; }
+.page-heading h1 { color: #2b302a; font-family: Georgia, "Times New Roman", serif; font-size: 29px; font-weight: 500; letter-spacing: -.7px; }
+.page-subtitle { color: #85857b; }
+.button-primary { color: #fffaf3; border-color: #b85d3c; background: linear-gradient(150deg, #e48d5b, #c26543 65%, #a84d32); box-shadow: 0 3px 0 #88432f, 0 6px 13px #a84d322a, inset 0 1px 0 #ffffff55; }
+.button-primary:hover { background: linear-gradient(150deg, #ec9866, #c26543 65%, #a84d32); box-shadow: 0 5px 0 #88432f, 0 10px 17px #a84d3230, inset 0 1px 0 #ffffff66; }
+.button-primary:active { box-shadow: 0 1px 0 #88432f, 0 3px 7px #a84d3222; }
+.button-secondary { color: #54564f; border-color: #ded8cd; background: #fffdf8; box-shadow: 0 2px 0 #e1dbd0, 0 4px 9px #473d2c0a, inset 0 1px 0 #fff; }
+.button-secondary:hover { border-color: #ccb9a5; background: #fffaf2; box-shadow: 0 3px 0 #ddd4c7, 0 7px 13px #473d2c10, inset 0 1px 0 #fff; }
+.upload-banner { border-color: #dfb899; background: linear-gradient(110deg, #f7e9d9 0%, #fbf4eb 54%, #f5e5d2 100%); box-shadow: 0 7px 0 #ead7c4, 0 13px 24px #71523b12, inset 0 1px 0 #fff; }
+.upload-banner::before { background: radial-gradient(circle at 30% 30%, #fff9, #eabb9624 65%, transparent 68%); }
+.upload-banner:hover { border-color: #ce926e; box-shadow: 0 10px 0 #ead7c4, 0 18px 30px #71523b20, inset 0 1px 0 #fff; }
+.upload-banner-icon { color: #ac5e3c; background: linear-gradient(145deg, #fff8ef, #f2d7bd); box-shadow: 0 3px 0 #e0c2a5, 0 7px 12px #9a5b3224, inset 0 1px 0 #fff; }
+.upload-banner-text strong { color: #4e4035; }
+.upload-banner-text small, .upload-banner-limit { color: #987e68; }
+.banner-chevron { color: #ad8465; }
+.list-toolbar h2 { color: #41433c; }
+.item-count { color: #a49a8d; }
+.view-toggle { border-color: #e4ded3; background: #fffdf8; box-shadow: 0 2px 0 #e3ddd2, 0 4px 9px #473d2c09, inset 0 1px 0 #fff; }
+.view-toggle button { color: #a59c90; }
+.view-toggle .view-selected { color: #ad5d3a; background: #f7e8da; }
+.entry-card { border-color: #e5dfd5; background: #fffdf8; box-shadow: 0 2px 0 #e6dfd4, 0 5px 12px #4637210a, inset 0 1px 0 #fff; }
+.entry-card:hover { border-color: #d7b89d; box-shadow: 0 5px 0 #e1d4c5, 0 13px 21px #49351c16, inset 0 1px 0 #fff; }
+.entry-preview { color: #a9775d; background: linear-gradient(145deg, #faf6ee, #eee6d9); box-shadow: inset 0 -1px 0 #e6dfd4; }
+.folder-preview { color: #b66c46; background: linear-gradient(145deg, #fff9ef 0%, #f3e3d1 100%); }
+.folder-preview > svg { filter: drop-shadow(0 4px 2px #9c593833); }
+.file-preview > svg { color: #907b66; filter: drop-shadow(0 4px 2px #58452f30); }
+.folder-lock { border-color: #f3e3d1; color: #fffaf4; background: #b76a46; }
+.file-open-mark, .file-download-action { border-color: #e9e0d5; color: #98684b; background: #fffdf8; box-shadow: 0 2px 0 #e4ddd2, 0 4px 8px #46372112, inset 0 1px 0 #fff; }
+.file-download-action:hover { color: #b45432; background: #fff8ef; }
+.entry-details strong { color: #45443d; }
+.entry-details small { color: #a0978b; }
+.empty-cloud { border-color: #ebd4be; color: #b66843; background: linear-gradient(145deg, #fff8ed, #f1dfcb); box-shadow: 0 5px 0 #e7d5c2, 0 10px 18px #72533818, inset 0 1px 0 #fff; }
+.empty-shadow { background: #ded4c5; }
+.empty-spark { background: #d2956f; }
+.empty-state h3 { color: #49483f; }
+.empty-state p { color: #999083; }
+.toast-note { border-color: #cbdacb; color: #456b4c; background: #f1f7ec; }
+.upload-progress { color: #9c5d3b; }
+.progress-spinner { border-color: #f1dfd1; border-top-color: #c26543; }
+.manager-footer { border-top-color: #e5dfd4; color: #9a9387; background: #fffaf380; }
+.manager-footer svg { color: #81916d; }
+.manager-modal { border-color: #e7dfd4; background: linear-gradient(150deg, #fffefa, #faf7f0); box-shadow: 0 5px 0 #e6ddcf, 0 24px 70px #45321f35, inset 0 1px 0 #fff; }
+.manager-modal h2 { color: #30352e; font-family: Georgia, "Times New Roman", serif; font-size: 20px; font-weight: 500; }
+.modal-description { color: #8e887d; }
+.modal-description strong { color: #514a40; }
+.modal-icon { color: #ad603d; background: linear-gradient(145deg, #fff8ed, #f1ddc8); box-shadow: 0 3px 0 #e1cbb5, 0 6px 12px #915b3616, inset 0 1px 0 #fff; }
+.modal-close { color: #a39788; }
+.modal-close:hover { color: #7f4832; background: #f4ebe0; }
+.modal-label { color: #5b554a; }
+.modal-input { border-color: #e4dcd0; color: #423d35; background: #fffefa; }
+.modal-input:focus { border-color: #c98763; box-shadow: 0 0 0 3px #d98c5a20; }
+.protect-option { border-color: #eee6db; }
+.protect-copy { color: #a36b4a; }
+.protect-copy strong { color: #534c41; }
+.protect-copy small { color: #9b9285; }
+.protect-option input { accent-color: #c26543; }
+.modal-drop { border-color: #dfc5ac; color: #b56541; background: linear-gradient(145deg, #fffaf2, #f6e8d9); }
+.modal-drop strong { color: #58483c; }
+.modal-drop span { color: #9a8b7b; }
+.manager-shell button:focus-visible, .manager-shell a:focus-visible, .manager-shell input:focus-visible { outline-color: #d9916b80; }
+@media (max-width: 650px) { .manager-shell::before { width: 110px; height: 110px; right: -30px; top: 18%; }.manager-shell::after { width: 90px; height: 90px; left: 9%; bottom: 10%; }.manager-sidebar { background: linear-gradient(180deg, #26332d, #1c2722); }.page-heading h1 { font-size: 26px; } }
+
 /* Hide Next.js error overlay portal */
 nextjs-portal {
   display: none !important;
