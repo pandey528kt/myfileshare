@@ -295,6 +295,9 @@
 .hidden-picker { display: none; }
 .entry-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 13px; }
 .entry-card { min-width: 0; overflow: hidden; border: 1px solid #e9edf2; border-radius: 7px; background: #fff; text-align: left; }
+.file-entry { width: 100%; padding: 0; color: inherit; font: inherit; cursor: pointer; }
+.file-entry:hover { border-color: #cbdaf8; box-shadow: 0 3px 12px #2c5db30d; }
+.file-open-mark { position: absolute; right: 10px; bottom: 9px; display: grid; place-items: center; width: 23px; height: 23px; border: 1px solid #e5eaf3; border-radius: 6px; color: #5579bf; background: #fff; }
 .folder-card { padding: 0; cursor: pointer; }
 .entry-preview { position: relative; display: grid; place-items: center; height: 123px; color: #8ea8e3; background: #f3f6fc; }
 .folder-preview { color: #6793ed; background: #f4f7fd; }
