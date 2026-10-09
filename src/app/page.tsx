@@ -1,7 +1,7 @@
 "use client";
 
 import { ChangeEvent, useRef, useState } from "react";
-import { Archive, ArrowDownToLine, AudioLines, Check, ChevronRight, CloudUpload, Code2, FileImage, FileText, Folder, FolderPlus, Grid2X2, HardDrive, List, LockKeyhole, MoreHorizontal, Search, ShieldCheck, Upload, Video, X } from "lucide-react";
+import { Archive, ArrowDownToLine, AudioLines, Check, ChevronRight, CloudUpload, Code2, FileImage, FileText, Folder, FolderPlus, Grid2X2, HardDrive, List, LockKeyhole, MoreHorizontal, Plus, Search, ShieldCheck, Upload, Video, X } from "lucide-react";
 
 type FileEntry = { name: string; size: string; type: string; date: string };
 type FolderEntry = { name: string; protected: boolean; password: string };
@@ -78,7 +78,7 @@ export default function Home() {
       <header className="manager-header"><div className="breadcrumbs"><span>Workspace</span><ChevronRight size={14} /><strong>{activeFolder ?? "My Files"}</strong></div><div className="header-actions"><label className="search-box"><Search size={16} /><input value={search} onChange={(event) => setSearch(event.target.value)} placeholder="Search files and folders" aria-label="Search files and folders" /><kbd>/</kbd></label><div className="header-avatar">K</div></div></header>
 
       <section className="files-content" id="files">
-        <div className="page-heading"><div><p className="heading-eyebrow">YOUR SPACE</p><h1>{activeFolder ?? "My Files"}</h1><p className="page-subtitle">Upload, organize, and share your files.</p></div><div className="heading-actions"><button className="button-secondary" onClick={() => { setError(""); setModal("folder"); }}><FolderPlus size={16} /> New Folder</button><button className="button-primary" onClick={() => picker.current?.click()}><Upload size={16} /> Upload Files</button></div></div>
+        <div className="page-heading"><div><p className="heading-eyebrow">YOUR SPACE</p><h1>{activeFolder ?? "My Files"}</h1><p className="page-subtitle">Upload, organize, and share your files.</p></div><div className="heading-actions"><button className="button-secondary" onClick={() => { setError(""); setModal("folder"); }}><FolderPlus size={16} /> New Folder</button><button className="button-primary" onClick={() => picker.current?.click()}><Plus size={17} /> Add File</button></div></div>
         <input ref={picker} type="file" multiple className="hidden-picker" onChange={(event) => addFiles(event.target.files)} aria-label="Choose files to upload" />
         <button className="upload-banner" onClick={() => setModal("upload")}><span className="upload-banner-icon"><CloudUpload size={22} /></span><span className="upload-banner-text"><strong>Upload files</strong><small>Drop files here or click to browse</small></span><span className="upload-banner-limit">Up to 100 MB per file</span><ChevronRight size={17} className="banner-chevron" /></button>
 
